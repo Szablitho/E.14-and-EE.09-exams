@@ -1,5 +1,0 @@
-1. select imie, nazwisko, punkty from klienci ORDER BY punkty DESC LIMIT 3;
-2. select typy.nazwa, COUNT(klienci.nazwisko) from typy join klienci on typy.id=klienci.Typy_id group by typy_id;
-group służy do grupowania wyniko po wyniku zapytania. np przypisze ilosc klinientow(count(klient.id)) do kolumny zdefiniowanej w "group by"
-3. select klienci.zdjecie, klienci.imie, opinie.opinia from klienci join opinie on klienci.id=opinie.Klienci_id where klienci.id IN(2,3);
-4. alter table klienci add adres varchar(50);

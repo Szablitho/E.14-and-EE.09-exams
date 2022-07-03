@@ -1,0 +1,5 @@
+3. SELECT akwen from lowisko JOIN zawody_wedkarskie ON lowisko.id=zawody_wedkarskie.Lowisko_id where zawody_wedkarskie.sedzia='Krzysztof Dobrowolski';
+
+1 i 2 poszly latwo
+
+4. create USER anna@localhsot identified by 'anna123';

@@ -1,0 +1,51 @@
+* { font-family: tahoma,sans-serif;}
+header {
+    background-color: Tomato;
+    color: white;
+    padding: 10px;
+}
+section {
+    background-color: seashell;
+    height: 500px;
+    overflow: auto;
+
+}
+footer > div {
+    background-color: Tomato;
+    color: white;
+    width: 25%;
+    height: 160px;
+    float: left;
+}
+.opinie {
+    background-color: white;
+    color: DimGray;
+    width: 60%;
+    height: 220px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px 5px dimgray; /* odległość X ,odległość Y od elementu, rozmycie,długość cienia */
+}
+img {
+    margin: 10px;
+    border-radius: 10px;  /* do sprawdzenia rogi zdjęcia*/
+    float: left;
+}
+q {
+    padding: 10px;
+    font-size: 150%;
+    font-style: italic;
+}
+h1, h2 {
+    text-align: center;
+}
+h4 {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 150%;
+    font-style: italic;
+}
+a {
+    color: white;
+}
+
+

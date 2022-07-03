@@ -1,0 +1,78 @@
+<html lang="pl">
+<title>Formatowanie
+  </title>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styl2.css" type="text/css"/>
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+</head>
+<body>
+  <div id="baner"> <h1> Formatowanie dokumentów HTML </h1>
+  </div>
+  <div class="top-bar" id="top-barL">
+    <h2> Przykład listy - hobby
+    </h2>
+    <ul>
+      <li> muzyka </li>
+      <li> turystyka
+        <ol>
+          <li> góry </li>
+          <li>jeziora </li>
+          <li>na rowerze </li>
+          </ol>
+      </li>
+      <li> książki </li>
+      </ul>
+  </div>
+  <div class="top-bar" id="top-barM">
+    <h2> Przykład tabeli - rozkład dnia </h2>
+    <table> <!--obramowanie komórek td w styl2 + scalenie ostatnich dwóch komórek(wieczór)-->
+   <tr>
+      <th> Pora dnia </th> <th>obowiązki </th>
+   </tr>
+   <tr>
+      <td>rano</td> <td>nauka</td>
+   </tr>
+   <tr>
+      <td>południe</td> <td>zajęcia dodatkowe</td>
+   </tr>
+   <tr>
+      <td>popołudnie</td> <td rowspan="2">moje hobby</td>
+   </tr>
+   <tr>
+      <td >wieczór</td>
+   </tr>
+    </table>
+  </div>
+  <div class="top-bar" id="top-barR">
+    <img src="napisy.png" height="300px"  alt="technologia web"/>
+    </div>
+  <div id="clearBot" </div>
+  <div id="content">
+    <p> Podaj rozmiar tekstu w procentach:
+      <input id="size" type="number" name="nazwa"/> %
+    </p>
+    <form name="form1">
+    <select id="justify">
+    <option value="1">prosty</option>
+    <option value="2">kursywa</option>
+    </select>
+    </form>
+      <p>Jakim kolorem sformatować tekst? Wybierz przycisk </p> <br>
+      <input class="button"id="red" type="button" onclick="kolorRed()"/>
+      <input class="button"id="green" type="button" onclick="kolorGreen()"/>
+      <input class="button"id="blue" type="button" onclick="kolorBlue()"/>
+    <p id="text" style="fontSize:default; color:default;"> To jest przykład paragrafu, który może być dowolnie formatowany przez Java Script </p>
+    </div>
+  <div id="stopka"> Formatowaniem tekstu zajmował się: <text> <i>02211403353 <i></text> <br>
+      <a target="_blank" href="http://www.formatowanie.pl"> Odwiedź także </a>
+    </div>
+
+
+
+
+  <script src="script3_proba 2.js" type="text/javascript"> </script>
+</body>
+
+
+  </html>

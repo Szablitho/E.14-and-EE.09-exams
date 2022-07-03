@@ -1,0 +1,7 @@
+1. select * from pogoda where miasta_id=1 order by data_prognozy ASC;
+2. select id, data_prognozy from pogoda where opady > 30;
+3. Z POMOCĄ https://www.testy.egzaminzawodowy.info/arkusz-20001-kwalifikacja-ee9-styczen-2022-zadanie-2
+select data_prognozy, miasta.nazwa from pogoda,miasta where pogoda.miasta_id=miasta.id AND temperatura_noc < 6;
+LUB 
+select data_prognozy, miasta.nazwa from pogoda JOIN miasta ON pogoda.miasta_id=miasta.id WHERE temperatura_noc < 6;
+4. ALTER TABLE MIASTA ADD COLUMN wojewodztwo varchar(20);

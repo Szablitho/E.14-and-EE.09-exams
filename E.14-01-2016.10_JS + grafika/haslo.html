@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+	<meta charset="UTF-8">
+	<title> Miernik jakości hasła </title>
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+	<header>
+		<h1> 
+			<a href="index.html">Sprawdź swoje hasło 
+			</a>
+		</h1>
+	</header>
+	<section id='lewy'>
+		<h2> Wybierz
+		</h2>
+		<ol>
+			<li> <a href="haslo.html"> Sprawdź hasło </a> </li>
+			<li> <a href="zasady.html"> Zasady tworzenia hasła </a> </li>
+		</ol>
+	</section>
+	<section id='prawy'>
+		<img src="haslo.png">
+		<p> Twoje hasło: </p>
+		<input id="password" type="password"> </input>
+		<input id='check' onclick='sprawdz()' type='submit' value="Sprawdź"/>
+		<p id='wynik'/>
+	</section>
+	<footer>
+		<h3>
+			Miernik jakości hasła
+		</h3>
+		<p>
+		Stronę opracował: 02211403353
+		</p>
+	</footer>
+	<script type="text/javascript">
+		var button = document.getElementById('check')
+		function sprawdz() { 
+			var pass = document.getElementById('password').value;
+			if(pass=='') { // jeśli puste to wyrzuci na czerwono tekst
+				document.getElementById('wynik').style.color="red";
+				document.getElementById('wynik').innerHTML = "WPISZ HASŁO!";
+			}
+			else if(pass.length>=4 && pass.length<=6 &&  /\d/.test( pass )) { // jeśli hasło ma między 4 a 6 znaków, w tym jedną cyfrę to wyrzuci na żółto tekst
+				document.getElementById('wynik').style.color="blue";			//if ( /\d/.test( pass ) ) { // hasło zawiera liczbę
+				document.getElementById('wynik').innerHTML = "ŚREDNIE";				 // https://forum.pasja-informatyki.pl/211675/przynajmiej-jedna-cyfra-javascript
+			}
+			else if(pass.length>=7 &&  /\d/.test( pass )) {//haslo ma wiecej niz 7 znaków i cyfrę 
+				document.getElementById('wynik').style.color="green";
+				document.getElementById('wynik').innerHTML="DOBRE"
+			}
+			else { // inne przypadki
+				document.getElementById('wynik').style.color="yellow";
+				document.getElementById('wynik').innerHTML="SŁABE"
+			}
+		}
+		
+	</script>
+</body>
+</html>
